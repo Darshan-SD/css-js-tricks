@@ -27,7 +27,7 @@ fetch('./config.json').then(res => res.json()).then(data => {
             }
             else if (el.tagName == 'TEXTAREA') {
                 cursor.style.width = '2px';
-                cursor.style.height = '20px';`${config.link.shadow.xoffset} ${config.link.shadow.yoffset} ${config.link.shadow.blurRadius} ${config.link.shadow.color}`
+                cursor.style.height = '20px'; `${config.link.shadow.xoffset} ${config.link.shadow.yoffset} ${config.link.shadow.blurRadius} ${config.link.shadow.color}`
             }
             else {
                 cursor.style.width = `${rect.width}px`;
@@ -46,8 +46,6 @@ fetch('./config.json').then(res => res.json()).then(data => {
 
                 cursor.style.backgroundColor = 'transparent';
             }
-
-            // cursor.style.border = '1px solid black'
             cursor.style.borderRadius = `${Math.min(rect.height / 2, 12)}px`;
         });
 
